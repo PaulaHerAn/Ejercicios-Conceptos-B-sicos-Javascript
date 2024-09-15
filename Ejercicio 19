@@ -8,3 +8,13 @@ const toys = [
 {id: 40, name: 'El gato con Guantes'},
 {id: 40, name: 'El gato felix'}
 ]
+
+const filteredToys = [];
+
+for (let i = 0; i < toys.length; i++) {
+  if (!toys[i].name.includes('gato')) {
+    filteredToys.push(toys[i]);
+  }
+}
+
+console.log(filteredToys);
